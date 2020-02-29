@@ -13,8 +13,8 @@
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-		<app.runtime>4.2.1</app.runtime>
+		<mule.home.test>C:\Users\bajpa\Downloads\mule-ee-distribution-standalone-4.2.2\mule-enterprise-standalone-4.2.2</mule.home.test>
+		<app.runtime>4.2.2</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
 	</properties>
 
@@ -25,8 +25,12 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-				</configuration>
+				 <configuration>
+    				<standaloneDeployment>
+      				<muleHome>${mule.home.test}</muleHome>
+      				<muleVersion>${app.runtime}</muleVersion>
+    				</standaloneDeployment>
+  				</configuration>
 			</plugin>
 		</plugins>
 	</build>
