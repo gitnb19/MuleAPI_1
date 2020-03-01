@@ -82,10 +82,13 @@
         </pluginRepository>
     <pluginRepository>
         <id>mule-ee-public</id>
+        <name> mule ee public repository</name>
         <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
         <snapshots>
             <enabled>false</enabled>
         </snapshots>
+        
+        
     </pluginRepository>
 </pluginRepositories>
 
