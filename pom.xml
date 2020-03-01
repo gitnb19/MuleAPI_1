@@ -17,6 +17,16 @@
 		<app.runtime>4.2.2</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
 	</properties>
+	
+	<pluginRepositories>
+    <pluginRepository>
+        <id>mule-ee-public</id>
+        <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </pluginRepository>
+</pluginRepositories>
 
 	<build>
 		<plugins>
